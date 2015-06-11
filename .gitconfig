@@ -1,8 +1,6 @@
 [user]
 	name = Bucky Schwarz
 	email = d.w.schwarz@gmail.com
-[core]
-	excludesfile = ~/Source/web/galaga/.gitignore
 
 [color]
   ui = auto
