@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+echo "Hello. Moving dotfiles into ~/"
+
+cp  $DIR/{.bashrc,.bash_profile,.gitconfig} ~/
+
+echo "Done. Sourcing .bash_profile"
+
+source ~/.bash_profile
