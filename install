@@ -6,6 +6,9 @@ echo "Hello. Moving dotfiles into ~/"
 
 cp  $DIR/{.bashrc,.bash_profile,.gitconfig} ~/
 
-echo "Done. Sourcing .bash_profile"
+echo "Done. Sourcing .bashrc"
 
-source ~/.bash_profile
+source ~/.bashrc
+
+cp $DIR/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
