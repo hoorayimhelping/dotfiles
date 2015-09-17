@@ -1,14 +1,17 @@
 [user]
-	name = Bucky Schwarz
-	email = d.w.schwarz@gmail.com
+    name = Bucky Schwarz
+    email = d.w.schwarz@gmail.com
 
 [color]
- 	ui = auto
+    ui = auto
 
 [color "status"]
- 	added = yellow
- 	changed = white
- 	untracked = cyan
+    added = yellow
+    changed = white
+    untracked = cyan
 
 [alias]
- 	st = status
+    st = status
+
+[push]
+    default = matching
