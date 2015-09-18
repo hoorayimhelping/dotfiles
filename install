@@ -2,19 +2,22 @@
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-echo "Hello. Moving dotfiles into ~/"
+echo "Hi, this'll just take a minute. About to move dotfiles into ~/"
 
 cp  $DIR/{.bashrc,.bash_profile,.gitconfig} ~/
 
-echo "Sourcing .bashrc"
-
+echo "Finished up. Sourcing .bashrc"
 source ~/.bashrc
 
-echo "Updating Sublime Text Settings"
+
+echo "About to update Sublime Text Settings"
 cp $DIR/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+cp $DIR/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+echo "Finished updating Sublime"
 
 echo "Updating OS X defaults"
 defaults write com.apple.dock mineffect -string suck
 defaults write com.apple.dock showhidden -bool YES
 killall Dock
+echo "Finished writing OS X defaults. I'm out"
