@@ -7,5 +7,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
 	"copy_with_empty_selection": false,
-	"bold_folder_labels": true
+	"bold_folder_labels": true,
+	"enable_tab_scrolling": false
 }
