@@ -14,7 +14,7 @@ echo "About to update Sublime Text Settings"
 cp $DIR/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 cp $DIR/Markdown.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 cp $DIR/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 echo "Finished updating Sublime"
 
 echo "Updating OS X defaults"
