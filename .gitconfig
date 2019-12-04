@@ -12,6 +12,7 @@
 
 [alias]
     st = status
+    rpull = pull --rebase origin master
 
 [push]
     default = matching
