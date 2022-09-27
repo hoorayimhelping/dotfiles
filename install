@@ -13,7 +13,7 @@ source ~/.bashrc
 echo "About to update Sublime Text Settings"
 cp $DIR/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 cp $DIR/Markdown.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-cp $DIR/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime/Packages/User/
+cp $DIR/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text/Packages/User/
 ln -sv "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 echo "Finished updating Sublime"
 
