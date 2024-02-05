@@ -1,11 +1,9 @@
-source ~/.zprofile
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-alias ll="ls -lh"
-alias la="ls -lha"
-
-autoload -Uz compinit && compinit
-
-alias mcdiff='git add . && git diff --cached | gist -pot diff; git reset .'
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export PS1="%~>"
 export SVN_EDITOR=subl
+
+autoload -Uz compinit && compinit
